@@ -1,2 +1,33 @@
-<h1>Movies#search</h1>
-<p>Find me in app/views/movies/search.html.erb</p>
+<h1> Résultats pour <%= @name %> </h1>
+
+<% if @movies.count > 0 %>
+<h2> Only the first 10 results are displayed </h2>
+<table class="table table-striped">
+      <tr>
+      	<th>Movie</th>
+      	<th>Director</th>
+        <th>Release Date</th>
+        <th>Average</th>
+      	<th>Overview</th>      	
+      	<th>Image</th>
+   	  </tr>
+
+  <% @movies.take(10).each do |movie| %> 
+    <tr>
+    	<td> <%= movie.title %> </td>
+    	<td> <%= movie.director %> </td>
+    	<td> <%= movie.release_date %> </td>
+      <td> <%= movie.vote_average %> </td>
+    	<td> <%= movie.overview %> </td>
+    	<td> <% if movie.poster_path %>
+    		<img src="http://image.tmdb.org/t/p/w185/<%= movie.poster_path %>" >  
+        <%end%>
+    	</td>
+
+    </tr>
+    <% end %>
+  </table>
+
+<% else %>
+<p class="text-center"> It seems that no movie correponds to your search... </p>
+<% end %>

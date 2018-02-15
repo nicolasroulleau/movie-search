@@ -1,24 +1,9 @@
-# README
+# MOVIE_SEARCH APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bienvenue sur mon app de recherche de films, développée en partenariat avec TMDB :wink:
 
-Things you may want to cover:
+L'app est déployée sur Heroku à l'adresse suivante: https://still-beyond-78188.herokuapp.com/
 
-* Ruby version
+Vous pourrez y effectuer toutes vos recherches. Have fun !!
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

@@ -1,0 +1,13 @@
+<h1> The movie database </h1>
+
+<%= form_tag (movies_path) do %>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">   
+  	<p> <%= label_tag 'name', "Quel film vous intéresse ?"  %> </p>
+  	<p> <%= text_field_tag(:name) %> </p>
+  	<p> <%= submit_tag 'Voir les films !', class: "btn btn-primary"%></p>
+  </div>
+</div>
+
+<% end %>

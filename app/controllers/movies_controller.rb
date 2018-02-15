@@ -13,6 +13,4 @@ class MoviesController < ApplicationController
 		@movies = SearchMovie.new(@name).perform
 	end
 
-
-
 end
